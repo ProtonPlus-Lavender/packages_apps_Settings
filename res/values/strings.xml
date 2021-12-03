@@ -14601,4 +14601,8 @@ To improve performance, you can set up Face Unlock again in Settings."</string>
     <string name="protonplus_maintainer_title">@string/protonplus_maintainer</string>
     <string name="protonplus_maintainer_summary">Unknown</string>
     
+    <!-- Applications fragment -->
+    <string name="search">Search</string>
+    <string name="search_apps">Search apps</string>
+
 </resources>
