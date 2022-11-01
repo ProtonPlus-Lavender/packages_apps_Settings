@@ -32,7 +32,8 @@ import com.android.settings.core.BasePreferenceController;
 public class CustomFirmwareVersionPreferenceController extends BasePreferenceController {
 
     private static final String TAG = "CustomFirmwareVersion";
-    private static final String VERSION_PROPERTY = "ro.proton.version";
+    private static final String VERSION = "ro.proton.version";
+    private static final String RELEASE_TYPE = "ro.proton.releasetype";
 
     private final PackageManager mPackageManager;
 
@@ -48,8 +49,12 @@ public class CustomFirmwareVersionPreferenceController extends BasePreferenceCon
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(VERSION_PROPERTY,
-                mContext.getString(R.string.device_info_default));
+        String getVer = SystemProperties.get(VERSION);
+        String getType = SystemProperties.get(RELEASE_TYPE);
+        if (!getVer.isEmpty() && !getType.isEmpty())
+            return getVer + " | " + getType;
+        else 
+            return mContext.getString(R.string.device_info_default);
     }
 
     @Override
