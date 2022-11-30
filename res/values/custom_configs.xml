@@ -20,10 +20,4 @@
     <!-- Whether to show min/max refresh rate in display settings -->
     <bool name="config_show_refresh_rate_controls">false</bool>
 
-    <!-- Lockscreen media artwork -->
-    <string name="lockscreen_media_art_category_title">Media art</string>
-    <string name="lockscreen_media_blur_title">Media art blur level</string>
-    <string name="show_lockscreen_media_art_title">Show media art</string>
-    <string name="lockscreen_media_art_options_title">Lockscreen media art</string>
-
 </resources>
