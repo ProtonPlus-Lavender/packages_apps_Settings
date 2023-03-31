@@ -14596,6 +14596,10 @@ To improve performance, you can set up Face Unlock again in Settings."</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Skip Face Unlock</string>
     <string name="security_settings_face_enroll_too_hot_title">Phone is too hot</string>
 
+    <!-- Force LTE_CA -->
+    <string name="force_lte_ca">Force LTE CA</string>
+    <string name="force_lte_ca_summary">Force LTE carrier aggregation to work</string>
+
     <!-- Maintainer -->
     <string name="protonplus_maintainer">Device Maintainer</string>
     <string name="protonplus_maintainer_title">@string/protonplus_maintainer</string>
